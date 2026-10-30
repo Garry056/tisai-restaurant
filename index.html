@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tisai Family Restaurant, Diva — Chicken Lapeta, Sizzler & Mutton Specials</title>
+<meta name="description" content="Tisai Family Restaurant, Diva — Chicken Lapeta, Sizzler Chicken aur Mutton Sukka ke liye mashhoor family restaurant, Datiwali Road.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Public+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--acc:#9f1239;--acc2:#2a0a12;--ink:#171310;--paper:#faf6ef;--card:#fffdf9}
+*{{margin:0;padding:0;box-sizing:border-box}}
+html{{scroll-behavior:smooth}}
+body{{font-family:'Public Sans',system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.55}}
+h1,h2,.serif{{font-family:'Fraunces',serif}}
+header{{position:sticky;top:0;z-index:50;background:rgba(23,19,16,.92);backdrop-filter:blur(8px);color:#fff;display:flex;justify-content:space-between;align-items:center;padding:12px 18px}}
+header .brand{{font-family:'Fraunces',serif;font-weight:800;font-size:1.05rem}}
+header a.call{{background:var(--acc);color:#fff;text-decoration:none;font-weight:700;padding:8px 16px;border-radius:999px;font-size:.9rem}}
+.hero{{background:linear-gradient(160deg,var(--acc2),var(--acc));color:#fff;padding:52px 20px 40px;text-align:center;overflow:hidden}}
+.hero img{{width:100%;max-width:640px;height:230px;object-fit:cover;border-radius:18px;margin-top:22px;box-shadow:0 18px 40px rgba(0,0,0,.35)}}
+.hero h1{{font-size:2.1rem;line-height:1.15;font-weight:800}}
+.hero p{{opacity:.92;max-width:520px;margin:12px auto 0}}
+.chip{{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);padding:6px 14px;border-radius:999px;font-weight:700;font-size:.85rem;margin-top:16px}}
+.btns{{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:22px}}
+.btn{{text-decoration:none;font-weight:800;padding:13px 22px;border-radius:999px;font-size:.95rem}}
+.btn.call{{background:#fff;color:var(--ink)}}
+.btn.wa{{background:#22c55e;color:#fff}}
+.btn.dir{{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.5)}}
+.marq{{background:var(--ink);color:#ffd9a0;overflow:hidden;white-space:nowrap;padding:10px 0;font-weight:700;font-size:.9rem}}
+.marq span{{display:inline-block;padding-left:100%;animation:mq 22s linear infinite}}
+@keyframes mq{{to{{transform:translateX(-100%)}}}}
+section{{padding:44px 20px;max-width:860px;margin:0 auto}}
+h2{{font-size:1.6rem;margin-bottom:8px}}
+.sub{{color:#6b6156;margin-bottom:22px}}
+.grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}}
+.dish{{background:var(--card);border:1px solid #eadfce;border-radius:16px;overflow:hidden;box-shadow:0 6px 18px rgba(60,40,10,.06)}}
+.dish img{{width:100%;height:140px;object-fit:cover}}
+.dish div{{padding:14px 16px}}
+.dish b{{display:block;font-size:1.02rem}}
+.dish p{{color:#6b6156;font-size:.9rem;margin-top:4px}}
+.menu{{background:var(--card);border:1px solid #eadfce;border-radius:16px;padding:22px}}
+.menu li{{list-style:none;display:flex;justify-content:space-between;padding:10px 2px;border-bottom:1px dashed #e5d9c3;font-weight:600}}
+.menu li:last-child{{border-bottom:none}}
+.menu .pr{{color:var(--acc);font-weight:800}}
+.gal{{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}}
+.gal img{{width:100%;height:150px;object-fit:cover;border-radius:12px}}
+.note{{font-size:.8rem;color:#8a7f70;margin-top:8px}}
+.info{{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}}
+.info .box{{background:var(--card);border:1px solid #eadfce;border-radius:16px;padding:18px}}
+.info b{{display:block;margin-bottom:6px;color:var(--acc)}}
+.pitch{{background:#171310;color:#f5ead9;border-radius:22px;padding:34px 24px;text-align:center}}
+.pitch h2{{color:#fff}}
+.pitch .cards{{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin-top:22px;text-align:left}}
+.pitch .pc{{background:#241e18;border:1px solid #453a2c;border-radius:16px;padding:18px}}
+.pitch .pc b{{font-size:1.05rem}}
+.pitch .price{{font-family:'Fraunces',serif;font-size:1.7rem;color:#ffcf87;margin:6px 0}}
+.pitch ul{{list-style:none;font-size:.9rem;color:#d8cbb6}}
+.pitch li{{padding:3px 0}}
+.pitch li::before{{content:"✓ ";color:#22c55e;font-weight:800}}
+footer{{text-align:center;padding:26px 16px 90px;color:#8a7f70;font-size:.85rem}}
+.slide{{opacity:0;transform:translateX(-46px);transition:all .8s cubic-bezier(.22,.8,.3,1)}}
+.slide.r{{transform:translateX(46px)}}
+.slide.in{{opacity:1;transform:none}}
+.callbar{{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;gap:8px;padding:10px;background:rgba(23,19,16,.94)}}
+.callbar a{{flex:1;text-align:center;text-decoration:none;font-weight:800;padding:12px;border-radius:12px;color:#fff}}
+.callbar .c1{{background:var(--acc)}}.callbar .c2{{background:#22c55e}}
+</style>
+</head>
+<body>
+<header><div class="brand">Tisai Family Restaurant</div><a class="call" href="tel:+919619193303">📞 Call</a></header>
+<div class="hero">
+<h1>Tisai Family Restaurant</h1>
+<p>Diva ka apna family restaurant — Chicken Lapeta, garam Sizzler aur Mutton Sukka, pure parivaar ke liye.</p>
+<div class="chip">⭐ 4.6 • 300+ ratings • Diva, Datiwali Road</div>
+<div class="btns">
+<a class="btn call" href="tel:+919619193303">📞 Call Karein</a>
+<a class="btn wa" href="https://wa.me/919619193303" target="_blank">💬 WhatsApp</a>
+<a class="btn dir" href="https://www.google.com/maps/search/?api=1&amp;query=Tisai+Family+Restaurant+Diva" target="_blank">📍 Rasta (Directions)</a>
+</div>
+<img src="https://picsum.photos/seed/tisaihero/900/520" alt="Tisai Family Restaurant">
+</div>
+<div class="marq"><span>CHICKEN LAPETA ✦ SIZZLER CHICKEN ✦ MUTTON SUKKA ✦ CHICKEN TANDOORI ✦ MUTTON HANDI ✦ BIRYANI ✦ CHICKEN LAPETA ✦ SIZZLER CHICKEN ✦ MUTTON SUKKA ✦ CHICKEN TANDOORI ✦ MUTTON HANDI ✦ BIRYANI ✦ </span></div>
+<section class="slide">
+<h2>Hamare Baare Me</h2>
+<p class="sub">Tisai Nagar, Datiwali Road par sthit Tisai Family Restaurant Diva ke un chand restaurants me se hai jahan rating khud bolti hai — 4.6 stars. Chicken Lapeta aur Sizzler Chicken yahan ki shaan hai, aur family ke saath baith kar khane ka pura mahaul milta hai.</p>
+</section>
+<section class="slide r">
+<h2>⭐ Mashhoor Specials</h2>
+<p class="sub">Jo khana yahan ke customers baar-baar mangte hain:</p>
+<div class="grid"><div class="dish"><img src="https://picsum.photos/seed/ts1/600/400" alt="Chicken Lapeta"><div><b>Chicken Lapeta</b><p>Tisai ka sabse famous dish — lapeta hua masaledar chicken.</p></div></div><div class="dish"><img src="https://picsum.photos/seed/ts2/600/400" alt="Sizzler Chicken"><div><b>Sizzler Chicken</b><p>Garam sizzler plate — dhua aur swad dono bharpur.</p></div></div><div class="dish"><img src="https://picsum.photos/seed/ts3/600/400" alt="Chicken Tandoori"><div><b>Chicken Tandoori</b><p>Tandoor ki aag se nikla hua juicy tandoori.</p></div></div><div class="dish"><img src="https://picsum.photos/seed/ts4/600/400" alt="Mutton Sukka"><div><b>Mutton Sukka</b><p>Sukha masala mutton — asli Maharashtrian style swad.</p></div></div><div class="dish"><img src="https://picsum.photos/seed/ts5/600/400" alt="Mutton Handi"><div><b>Mutton Handi</b><p>Handi me pakka hua naram mutton — khaas mauko ke liye.</p></div></div><div class="dish"><img src="https://picsum.photos/seed/ts6/600/400" alt="Chicken Thali & Biryani"><div><b>Chicken Thali & Biryani</b><p>Pait bhar thali aur dum biryani — family ke liye perfect.</p></div></div></div>
+</section>
+<section class="slide">
+<h2>Menu Highlights</h2>
+<p class="sub">Poora menu aur daam ke liye call ya WhatsApp karein — family pack aur thali options uplabdh hain.</p>
+<div class="menu"><ul><li><span>Chicken Lapeta</span><span class="pr">Special</span></li><li><span>Sizzler Chicken</span><span class="pr">Special</span></li><li><span>Chicken Tandoori</span><span class="pr">Tandoor</span></li><li><span>Chicken Kabab</span><span class="pr">Starter</span></li><li><span>Mutton Sukka</span><span class="pr">Special</span></li><li><span>Biryani</span><span class="pr">Rice</span></li></ul></div>
+</section>
+<section class="slide r">
+<h2>Gallery</h2>
+<div class="gal"><img src="https://picsum.photos/seed/tisaig1/500/400" alt="Tisai Family Restaurant photo 1"><img src="https://picsum.photos/seed/tisaig2/500/400" alt="Tisai Family Restaurant photo 2"><img src="https://picsum.photos/seed/tisaig3/500/400" alt="Tisai Family Restaurant photo 3"><img src="https://picsum.photos/seed/tisaig4/500/400" alt="Tisai Family Restaurant photo 4"></div>
+<p class="note">Photos representative hain — asli photos final website me owner ki gallery se lagenge.</p>
+</section>
+<section class="slide">
+<h2>Sampark (Contact)</h2>
+<div class="info"><div class="box"><b>📍 Pata (Address)</b>Tisai Nagar, Datiwali Road, Police Chowki ke paas, Diva, Thane 400612</div><div class="box"><b>📞 Phone</b>+919619193303<br><a href="tel:+919619193303">Abhi call karein</a></div></div>
+</section>
+<section class="slide r">
+<div class="pitch">
+<h2>Ye Website Ek FREE Demo Hai</h2>
+<p style="color:#d8cbb6;max-width:560px;margin:10px auto 0">Ye demo <b style="color:#fff">GK Web Design</b> ne is business ke liye khaas banaya hai. Google par aapko dhundhne wale customers ko aaj sirf listing dikhti hai — apni website hogi to call aur order sidha aapke paas aayenge.</p>
+<div class="cards">
+<div class="pc"><b>Starter</b><div class="price">₹5,000</div><ul><li>1-page website</li><li>Menu + photos</li><li>Call / WhatsApp button</li><li>Google Map</li></ul></div>
+<div class="pc"><b>Business</b><div class="price">₹10,000</div><ul><li>4–5 pages</li><li>Online order enquiry</li><li>Google setup madad</li><li>1 mahina support</li></ul></div>
+<div class="pc"><b>Premium</b><div class="price">₹15,000</div><ul><li>Sab kuch Business wala</li><li>Apna domain naam (.in)</li><li>Offers / updates section</li><li>3 mahina support</li></ul></div>
+</div>
+<p style="margin-top:20px;color:#d8cbb6">Baat karne ke liye: <b style="color:#fff">Garry K — GK Web Design</b> (demo pasand aaye to Facebook message ka jawab dein, baaki hum sambhal lenge)</p>
+</div>
+</section>
+<footer>Tisai Family Restaurant • Diva<br>Demo website by GK Web Design</footer>
+<div class="callbar"><a class="c1" href="tel:+919619193303">📞 Call</a><a class="c2" href="https://wa.me/919619193303" target="_blank">💬 WhatsApp</a></div>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.slide').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
